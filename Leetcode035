@@ -1,0 +1,21 @@
+class Solution {
+public:
+    int searchInsert(int A[], int n, int target) {
+        if(n <= 0) return 0;
+        if(n == 1) 
+        {
+            if(A[0] >= target) return 0;
+            else return 1;
+        }
+        
+        int i = 0;
+        while(i < n)
+        {
+            if(A[i] < target) ++i;
+            else break;
+        }
+        
+        if(A[0] >= target) return 0;
+        else return i;
+    }
+};
