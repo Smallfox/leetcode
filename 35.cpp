@@ -1,4 +1,4 @@
-Search Insert Positionclass Solution {
+class Solution {
 public:
     int searchInsert(vector<int>& nums, int target) {
         if(nums.size() == 0)
